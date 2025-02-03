@@ -11,8 +11,18 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-50;
+  @apply bg-zinc-900 text-zinc-50
+ /* bg-[#2a1454] */
+ /* bg-[#8750f7] */
+  ;
 }
+/* body{
+  background: rgb(135,80,247);
+background: radial-gradient(circle, rgba(135,80,247,1) 0%, rgba(42,20,84,1) 100%);
+} */
+
+
+
 
 /* ---------------------------------- *\
  * TYPOGRAPHY

@@ -1,6 +1,6 @@
 const socialLinks = [
   {
-    href: "https://www.github.com/aiman-shafi",
+    href: "https://github.com/mdraseltalukder",
     icon: (
       <svg
         width="24"
@@ -18,7 +18,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/aimanshafi",
+    href: "https://www.linkedin.com/in/md-rasel-talukderbd/",
     icon: (
       <svg
         width="24"
@@ -36,7 +36,7 @@ const socialLinks = [
     alt: "LinkedIn",
   },
   {
-    href: "https://x.com/aimanshafi",
+    href: "https://x.com/mdraseltalukdr",
     icon: (
       <svg
         width="24"
@@ -54,7 +54,7 @@ const socialLinks = [
     alt: "Twitter X",
   },
   {
-    href: "https://www.instagram.com/aimanshafi___",
+    href: "https://www.instagram.com/mdraseltalukdrr/",
     icon: (
       <svg
         width="25"
@@ -118,7 +118,7 @@ const Contact = () => {
                 id="name"
                 autoComplete="name"
                 required
-                placeholder="Aiman"
+                placeholder="Md Rasel"
                 className="text-field reveal-up"
               />
             </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                 id="email"
                 autoComplete="email"
                 required
-                placeholder="aiman@example.com"
+                placeholder="rasel@example.com"
                 className="text-field reveal-up"
               />
             </div>
@@ -148,7 +148,7 @@ const Contact = () => {
             <textarea
               name="message"
               id="message"
-              placeholder="Hi!"
+              placeholder="massage..."
               required
               className="text-field resize-y min-h-32 max-h-80 reveal-up"
             ></textarea>

@@ -1,11 +1,16 @@
-import { ButtonPrimary, ButtonOutline } from "./Button";
+import { ButtonOutline, ButtonPrimary } from "./Button";
+
+
+
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 lg:pt-36">
-      <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
+    <section id="home" className="pt-28 lg:pt-36 ">
+    
+   
+      <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
         <div>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
                 src="/images/avatar-1.jpg"
@@ -22,9 +27,23 @@ const Hero = () => {
               </span>
               Available for work
             </div>
-          </div>
+          </div> */}
+          <h3 className="text-2xl md:text-3xl font-extralight">I am Md Rasel</h3>
 
-          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
+
+            <h2 className="headline-1 mt-5 mb-8 lg:mb-10">Full-Stack Web Developer</h2>
+            {/* <Typed
+              strings={[
+                "Full-Stack Web Developer",
+                "Frontend Developer",
+                "Backend Developer",
+              ]}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            /> */}
+            
+          <h2 className="text-3xl lg:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
             Building Scalable Modern Websites for the Future
           </h2>
 
@@ -40,12 +59,12 @@ const Hero = () => {
         </div>
 
         <div className="hidden lg:block">
-          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-lime-400 via-25% via-lime-400/40 to-65% rounded-[60px] overflow-hidden">
+          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t rounded-[60px] overflow-hidden">
             <img
-              src="/images/aiman.jpeg"
+              src="/images/profile.jpeg"
               width={500}
               height={600}
-              alt="Aiman"
+              alt="Rasel"
               className="w-full"
             />
           </figure>

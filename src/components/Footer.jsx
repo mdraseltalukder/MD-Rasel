@@ -26,19 +26,19 @@ const sitemap = [
 const socials = [
   {
     label: "GitHub",
-    href: "https://www.github.com/aiman-shafi",
+    href: "https://github.com/mdraseltalukder",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/aimanshafi",
+    href: "https://www.linkedin.com/in/md-rasel-talukderbd/",
   },
   {
     label: "Twitter X",
-    href: "https://x.com/aimanshafi",
+    href: "https://x.com/mdraseltalukdr",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/aimanshafi___",
+    href: "https://www.instagram.com/mdraseltalukdrr/",
   },
 ];
 
@@ -53,7 +53,7 @@ const Footer = () => {
             </h2>
 
             <ButtonPrimary
-              href="mailto:codewithsadee@gmail.com"
+              href="mailto:mdrasel551219@gmail.com"
               label="Start project"
               icon="chevron_right"
               classes="reveal-up"
@@ -100,11 +100,12 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8">
           <a href="/" className="logo reveal-up">
-            <img src="/images/logo.svg" width={40} height={40} alt="Logo" />
+            <img src="/images/logo.png"  width={150}
+              height={90} alt="Logo" />
           </a>
 
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2024 <span className="text-zinc-200">aimanshafi</span>
+            &copy; 2024 <span className="text-zinc-200">MD Rasel</span>
           </p>
         </div>
       </div>

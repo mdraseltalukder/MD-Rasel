@@ -1,20 +1,11 @@
 import { Briefcase, Calendar, Building2 } from "lucide-react";
 
 const experiences = [
-  {
-    role: "Senior Software Engineer",
-    company: "TechCorp Inc.",
-    period: "2020 - Present",
-    description: [
-      "Led development of cloud-native applications using React and Node.js",
-      "Mentored junior developers and conducted code reviews",
-      "Improved application performance by 40% through optimization",
-    ],
-  },
+  
   {
     role: "Full Stack Developer",
-    company: "Digital Solutions Ltd",
-    period: "2018 - 2020",
+    company: "Web Battalion",
+    period: "2023 - 2024",
     description: [
       "Developed and maintained multiple client-facing web applications",
       "Implemented responsive designs and ensured cross-browser compatibility",
@@ -23,8 +14,8 @@ const experiences = [
   },
   {
     role: "Frontend Developer",
-    company: "WebTech Startup",
-    period: "2016 - 2018",
+    company: "Codemanbd",
+    period: "2022 - 2023",
     description: [
       "Built interactive user interfaces using React and TypeScript",
       "Integrated REST APIs and implemented state management",

@@ -7,6 +7,11 @@ const skillItem = [
     desc: "Design tool",
   },
   {
+    imgSrc: "/images/html.svg",
+    label: "Html",
+    desc: "Markup Language",
+  },
+  {
     imgSrc: "/images/css3.svg",
     label: "CSS",
     desc: "User Interface",
@@ -16,21 +21,21 @@ const skillItem = [
     label: "JavaScript",
     desc: "Interaction",
   },
-  {
-    imgSrc: "/images/nodejs.svg",
-    label: "NodeJS",
-    desc: "Web Server",
-  },
-  {
-    imgSrc: "/images/expressjs.svg",
-    label: "ExpressJS",
-    desc: "Node Framework",
-  },
-  {
-    imgSrc: "/images/mongodb.svg",
-    label: "MongoDB",
-    desc: "Database",
-  },
+  // {
+  //   imgSrc: "/images/nodejs.svg",
+  //   label: "NodeJS",
+  //   desc: "Web Server",
+  // },
+  // {
+  //   imgSrc: "/images/expressjs.svg",
+  //   label: "ExpressJS",
+  //   desc: "Node Framework",
+  // },
+  // {
+  //   imgSrc: "/images/mongodb.svg",
+  //   label: "MongoDB",
+  //   desc: "Database",
+  // },
   {
     imgSrc: "/images/react.svg",
     label: "React",
@@ -42,9 +47,24 @@ const skillItem = [
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/tailwindcss.svg",
+    imgSrc: "/images/bootstrap.svg",
+    label: "Bootstrap",
+    desc: "a framework ",
+  },
+  {
+    imgSrc: "/images/wordpress.svg",
     label: "Wordpress",
     desc: "User Interface",
+  },
+  {
+    imgSrc: "/images/php.svg",
+    label: "PHP",
+    desc: "a scripting language",
+  },
+  {
+    imgSrc: "/images/mysql.svg",
+    label: "MySQL Database",
+    desc: "database management system",
   },
 ];
 
