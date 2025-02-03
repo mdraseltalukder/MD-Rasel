@@ -93,7 +93,7 @@ const Contact = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-[#00e7f8] rounded-lg transition-[background-color,color]  hover:bg-[#00e7f8] hover:text-zinc-950 active:bg-[#00e7f8] reveal-up"
               >
                 {icon}
               </a>

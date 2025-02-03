@@ -33,12 +33,18 @@ const Header = () => {
           <Navbar navOpen={navOpen} />
         </div>
 
-        <a
-          href="#contact"
-          className="btn btn-secondary max-md:hidden md:justify-self-end"
-        >
-          Contact Me
+        <div className="contact-btn max-md:hidden md:justify-self-end ">
+    
+        <a   href="#contact"
+        className="text-[12px] lg:text-[16px] ">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Contact&nbsp;Me
         </a>
+  
+    </div>
+     
       </div>
     </header>
   );
