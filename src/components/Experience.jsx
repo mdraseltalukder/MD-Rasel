@@ -29,7 +29,7 @@ const ExperienceSection = () => {
     <section className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4 experience">
             Professional Experience
           </h2>
           <p className="text-gray-400 text-lg">
@@ -46,7 +46,7 @@ const ExperienceSection = () => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <Briefcase className="w-5 h-5 text-lime-400" />
+                    <Briefcase className="w-5 h-5 text-[#00e7f8]" />
                     <h3 className="text-xl font-semibold text-white">
                       {exp.role}
                     </h3>
@@ -56,7 +56,7 @@ const ExperienceSection = () => {
                     <span>{exp.company}</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 mt-2 md:mt-0 text-lime-400">
+                <div className="flex items-center gap-2 mt-2 md:mt-0 text-[#00e7f8]">
                   <Calendar className="w-4 h-4" />
                   <span>{exp.period}</span>
                 </div>
@@ -64,7 +64,7 @@ const ExperienceSection = () => {
               <ul className="space-y-2 text-gray-300">
                 {exp.description.map((desc, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-lime-400 flex-shrink-0"></span>
+                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-[#00e7f8] flex-shrink-0"></span>
                     <span>{desc}</span>
                   </li>
                 ))}

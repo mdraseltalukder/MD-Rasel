@@ -1,5 +1,7 @@
 import { ButtonOutline, ButtonPrimary } from "./Button";
 
+import { TypeAnimation } from 'react-type-animation';
+
 
 
 
@@ -28,22 +30,31 @@ const Hero = () => {
               Available for work
             </div>
           </div> */}
-          <h3 className="text-2xl md:text-3xl font-extralight">I am Md Rasel</h3>
+          <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]"> I am Md <span className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] text-[#00e7f8]">Rasel</span>  </h3>
 
 
-            <h2 className="headline-1 mt-5 mb-8 lg:mb-10">Full-Stack Web Developer</h2>
-            {/* <Typed
-              strings={[
-                "Full-Stack Web Developer",
-                "Frontend Developer",
-                "Backend Developer",
-              ]}
-              typeSpeed={50}
-              backSpeed={50}
-              loop
-            /> */}
+            {/* <h2 className="text-3xl md:text-4xl ">Full-Stack Web Developer</h2> */}
+           <h2>
+            <span className="text-[2rem] text-extra-bold xl:text-[3rem]">a </span>
+            <TypeAnimation
+      sequence={[
+      
+        ' Full-stack Developer',
+        1000, 
+        ' Frontend Developer',
+        1000,
+        ' Website Designer',
+        1000,
+       
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{  display: 'inline-block' }}
+      repeat={Infinity}
+    />
+           </h2>
             
-          <h2 className="text-3xl lg:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
             Building Scalable Modern Websites for the Future
           </h2>
 

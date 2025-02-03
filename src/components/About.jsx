@@ -26,10 +26,10 @@ const About = () => {
             {aboutItems.map(({ label, number }, key) => (
               <div key={key}>
                 <div className="flex items-center md:mb-2">
-                  <span className="text-2xl font-semibold md:text-4xl">
+                  <span className="text-2xl font-semibold md:text-4xl text-[#00e7f8]">
                     {number}
                   </span>
-                  <span className="text-lime-400 font-semibold md:text-3xl">
+                  <span className="text-[#00e7f8] font-semibold md:text-3xl">
                     +
                   </span>
                 </div>
