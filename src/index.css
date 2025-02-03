@@ -158,6 +158,8 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
   @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
 }
 
+
+
 /* button */
  .contact-btn a {
         position: relative;
@@ -321,4 +323,35 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
 
 .text-field::placeholder {
   @apply text-zinc-400;
+}
+
+
+/* animation */
+
+.shiny-text {
+  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    #00eeff 40%,
+    white 80%,
+    #00eeff 40%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
 }
