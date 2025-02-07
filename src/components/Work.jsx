@@ -39,7 +39,11 @@ const works = [
   },
 ];
 
-const Work = () => {
+
+export default function Work(){
+
+
+
   return (
     <section id="work" className="section">
       <div className="container">
@@ -62,4 +66,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+

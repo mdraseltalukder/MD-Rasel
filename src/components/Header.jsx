@@ -12,8 +12,8 @@ const Header = () => {
           <a href="/" className="logo">
             <img
               src="/images/logo.png"
-              width={150}
-              height={90}
+              width={200}
+              height={100}
               alt="Md Rasel
               "
             />

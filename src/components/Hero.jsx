@@ -1,15 +1,21 @@
+
 import { ButtonOutline, ButtonPrimary } from "./Button";
 
 import { TypeAnimation } from 'react-type-animation';
-import DecryptedText from './ui/DecryptedText.jsx';
+import About from './About';
+import ExperienceSection from './Experience';
+import Skill from './Skill';
 import ShinyText from './ui/ShinyText.jsx';
+import Work from './Work';
+import Contact from './Contact';
 
 
+export default function Hero(){
 
-const Hero = () => {
 
 
   return (
+    <>
     <section id="home" className="pt-28 lg:pt-36 ">
     
    
@@ -54,15 +60,11 @@ const Hero = () => {
     />
            </h2>
             
-          {/* <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
             Building Scalable Modern Websites for the Future
-          </h2> */}
+          </h2>
           <div className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
-<DecryptedText
-  text="Building Scalable Modern Websites for the Future"
-  animateOn="view"
-  revealDirection="center"
-/>
+
 </div>
 
           <div className="flex items-center gap-3">
@@ -89,7 +91,12 @@ const Hero = () => {
         </div>
       </div>
     </section>
+   {/* <About />
+   <Skill />
+      <Work />
+      <ExperienceSection />
+      <Contact /> */}
+    </>
   );
 };
 
-export default Hero;

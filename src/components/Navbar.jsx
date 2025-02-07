@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
-const Navbar = ({ navOpen }) => {
+const Navbar = ({ navOpen, setNavOpen }) => {
   const lastActiveLink = useRef();
   const activeBox = useRef();
 
@@ -44,11 +44,17 @@ const Navbar = ({ navOpen }) => {
       link: "#work",
       className: "nav-link",
     },
+    // {
+    //   label: "Reviews",
+    //   link: "#reviews",
+    //   className: "nav-link",
+    // },
     {
-      label: "Reviews",
-      link: "#reviews",
+      label: "Experience",
+      link: "#experience",
       className: "nav-link",
     },
+   
     {
       label: "Contact",
       link: "#contact",

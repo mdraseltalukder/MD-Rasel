@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, Building2 } from "lucide-react";
+import { Briefcase, Building2, Calendar } from "lucide-react";
 
 const experiences = [
   
@@ -26,7 +26,7 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-20">
+    <section className="py-20" id="experience">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4 experience">
