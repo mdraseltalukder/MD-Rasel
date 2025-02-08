@@ -8,7 +8,7 @@ const SkillCard = ({ imgSrc, label, desc, classes }) => {
         classes
       }
     >
-      <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-zinc-900 transition-colors">
+      <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-[#00eeff2d] transition-colors">
         <img src={imgSrc} width={32} height={32} alt={label} />
       </figure>
 

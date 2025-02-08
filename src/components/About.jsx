@@ -1,3 +1,19 @@
+
+
+
+
+
+import SpotlightCard from './ui/SpotlightCard';
+
+
+
+
+
+
+
+
+
+
 const aboutItems = [
   {
     label: "Project done",
@@ -9,10 +25,12 @@ const aboutItems = [
   },
 ];
 
-const About = () => {
+ export default function About()  {
   return (
-    <section id="about" className="section">
-      <div className="container">
+    
+    <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+    <section id="about" className="section ">
+    <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
             Welcome! I&apos;m Md Rasel, a professional web developer with a knack
@@ -42,8 +60,11 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+</SpotlightCard>
+    
+
   );
 };
 
-export default About;
+

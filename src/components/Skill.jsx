@@ -68,6 +68,7 @@ const skillItem = [
   },
 ];
 
+
 const Skill = () => {
   return (
     <section className="section">
@@ -86,7 +87,7 @@ const Skill = () => {
               imgSrc={imgSrc}
               label={label}
               desc={desc}
-              classes="reveal-up"
+              classes="reveal-up hover:text-[#00eeff]"
             />
           ))}
         </div>
