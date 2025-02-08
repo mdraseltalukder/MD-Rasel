@@ -77,7 +77,7 @@ const socialLinks = [
 
 export default function SocialLinks() {
   return (
-    <div className="flex items-center gap-3 mt-auto">
+    <div className="flex items-center gap-3 " id="socials">
     {socialLinks.map(({ href, icon }, key) => (
       <a
         key={key}

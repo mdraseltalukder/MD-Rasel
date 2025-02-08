@@ -403,3 +403,17 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
 h2.text-2xl.lg\:text-3xl.xl\:text-4xl.max-w-\[15ch\].sm\:max-w-\[20ch\].lg\:max-w-\[25ch\].mt-5.mb-8.lg\:mb-10.font-thin {
   font-family: 'Inter';
 }
+body{
+  position: relative;
+}
+
+@keyframes brightnessPulse {
+  0% { filter: brightness(0.8); }
+  50% { filter: brightness(1.3); }
+  100% { filter: brightness(0.8); }
+}
+.gsap-animation{
+  @apply  w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-3 fixed  top-0 left-0 z-50;
+  background: linear-gradient(45deg, #08001f, #220055);
+  animation: brightnessPulse 2s infinite alternate ease-in-out;
+}

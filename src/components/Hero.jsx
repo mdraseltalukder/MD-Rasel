@@ -2,6 +2,7 @@
 import { ButtonPrimary } from "./Button";
 
 import { TypeAnimation } from 'react-type-animation';
+import GsapAnimation from './GsapAnimation';
 import ShinyText from './ui/ShinyText.jsx';
 import SocialLinks from "./ui/SocialLinks";
 
@@ -16,7 +17,7 @@ export default function Hero(){
     
    
       <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
-        <div>
+        <div id="hero1">
         
           <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]"> I am{" "} 
           
@@ -75,7 +76,7 @@ export default function Hero(){
           </div>
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:block" id="hero2">
           <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t rounded-[60px] overflow-hidden">
             <img
               src="/images/profile.jpeg"
@@ -88,11 +89,9 @@ export default function Hero(){
         </div>
       </div>
     </section>
-   {/* <About />
-   <Skill />
-      <Work />
-      <ExperienceSection />
-      <Contact /> */}
+    <div>
+    <GsapAnimation />
+    </div>
     </>
   );
 };
