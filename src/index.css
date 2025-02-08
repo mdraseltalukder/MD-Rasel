@@ -22,8 +22,20 @@ body {
 background: radial-gradient(circle, rgba(135,80,247,1) 0%, rgba(42,20,84,1) 100%);
 } */
 
+/* font */
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
+h1,h2,h3,h4,h5,headline-1, headline-2 {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
 
 /* ---------------------------------- *\
  * TYPOGRAPHY
@@ -387,4 +399,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
 .card-spotlight:hover::before,
 .card-spotlight:focus-within::before {
   opacity: 0.6;
+}
+h2.text-2xl.lg\:text-3xl.xl\:text-4xl.max-w-\[15ch\].sm\:max-w-\[20ch\].lg\:max-w-\[25ch\].mt-5.mb-8.lg\:mb-10.font-thin {
+  font-family: 'Inter';
 }

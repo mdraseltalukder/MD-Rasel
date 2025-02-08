@@ -1,13 +1,9 @@
 
-import { ButtonOutline, ButtonPrimary } from "./Button";
+import { ButtonPrimary } from "./Button";
 
 import { TypeAnimation } from 'react-type-animation';
-import About from './About';
-import ExperienceSection from './Experience';
-import Skill from './Skill';
 import ShinyText from './ui/ShinyText.jsx';
-import Work from './Work';
-import Contact from './Contact';
+import SocialLinks from "./ui/SocialLinks";
 
 
 export default function Hero(){
@@ -27,7 +23,7 @@ export default function Hero(){
            {/* <span className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] text-[#00e7f8]">Md Rasel</span> */}
          
   
-  <ShinyText text="Md Rasel" disabled={false} speed={3} className='custom-class' />
+  <ShinyText text="Md Rasel" disabled={false} speed={3} className='custom-class cinzel-decorative-regular' />
 
 
            </h3>
@@ -60,21 +56,22 @@ export default function Hero(){
     />
            </h2>
             
-          <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin  ">
             Building Scalable Modern Websites for the Future
           </h2>
-          <div className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin">
+          <div className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-th
+          ">
 
 </div>
 
           <div className="flex items-center gap-3">
             <ButtonPrimary label="Download CV" icon="download" />
-
-            <ButtonOutline
+<SocialLinks/>
+            {/* <ButtonOutline
               href="#about"
               label="Scroll down"
               icon="arrow_downward"
-            />
+            /> */}
           </div>
         </div>
 

@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
-const Navbar = ({ navOpen, setNavOpen }) => {
+const Navbar = ({ navOpen }) => {
   const lastActiveLink = useRef();
   const activeBox = useRef();
 
