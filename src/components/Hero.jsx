@@ -21,7 +21,7 @@ export default function Hero(){
         
           <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]"> I am{" "} 
           
-           {/* <span className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] text-[#00e7f8]">Md Rasel</span> */}
+         
          
   
   <ShinyText text="Md Rasel" disabled={false} speed={3} className='custom-class cinzel-decorative-regular' />
