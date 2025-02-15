@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**
 
-Currently, two official plugins are available:
+## project name: Restaurant Website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**
+**about info:**
+this website is about my portfolio website.
+[visit-website](https://md-rasel.vercel.app/)
+
+**tools i have used:**
+
+ -React js
+  -React type animation
+  -GSAP
+  -tailwind css
+
+snap: 
+
+![enter image description here](https://github.com/mdraseltalukder/MD-Rasel/blob/main/public/images/ss2.png?raw=true)
+
+![enter image description here](https://github.com/mdraseltalukder/MD-Rasel/blob/main/public/images/ss.png?raw=true)
