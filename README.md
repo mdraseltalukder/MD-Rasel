@@ -1,7 +1,7 @@
 
 **
 
-## project name: Restaurant Website.
+## project name: Portfolio Website.
 
 **
 **about info:**
