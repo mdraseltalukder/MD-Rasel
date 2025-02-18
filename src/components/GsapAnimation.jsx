@@ -25,6 +25,7 @@ tl.to(".gsap-animation",{
     }
 })
     }
+    
 
 
 },[])

@@ -1,5 +1,6 @@
-import { Briefcase, Building2, Calendar } from "lucide-react";
 
+import { Briefcase, Building2, Calendar } from 'lucide-react';
+import SpotlightCard from './ui/SpotlightCard';
 const experiences = [
   
   {
@@ -38,10 +39,11 @@ const ExperienceSection = () => {
         </div>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <div
+        {experiences.map((exp, index) => (
+            
+            <SpotlightCard spotlightColor="rgba(0, 229, 255, 0.2)"
               key={index}
-              className="bg-zinc-800 rounded-lg p-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+              className="bg-zinc-800 rounded-lg p-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl custom-spotlight-card"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -69,8 +71,10 @@ const ExperienceSection = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </SpotlightCard>
+            
           ))}
+          
         </div>
       </div>
     </section>

@@ -1,17 +1,5 @@
 
-
-
-
-
 import SpotlightCard from './ui/SpotlightCard';
-
-
-
-
-
-
-
-
 
 
 const aboutItems = [
@@ -31,7 +19,15 @@ const aboutItems = [
     <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
     <section id="about" className="section ">
     <div className="container">
-        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
+        <div className="bg-transparent pb-6 rounded-2xl md:pb-12 reveal-up md:grid md:grid-cols-[1fr_2fr] md:items-center md:gap-6">
+        <div className="hidden md:block w-full">
+          <img src="images/profile.jpg" alt="" 
+          className="w-full rounded-lg shadow-lg shadow-[#00e7f8]"
+         
+          />
+        </div>
+        <div>
+        <h2 className="text-4xl font-bold text-white mb-4 experience">About Us</h2>
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
             Welcome! I&apos;m Md Rasel, a professional web developer with a knack
             for crafting visually stunning and highly functional websites.
@@ -58,6 +54,8 @@ const aboutItems = [
 
           
           </div>
+
+        </div>
         </div>
       </div>
       </section>

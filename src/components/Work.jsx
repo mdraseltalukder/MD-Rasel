@@ -2,41 +2,47 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "#",
-  },
-  {
     imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "#",
-  },
-  {
-    imgSrc: "/images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["Development", "API"],
-    projectLink: "",
+    title: "PlumbRight",
+    description:"Plumbing website",
+    tags: ["ReactJS", "GSAP", "Development"],
+    projectLink: "https://plumb-right.vercel.app/",
   },
   {
     imgSrc: "/images/project-4.jpg",
-    title: "Real state website",
-    tags: ["Web-design", "Development"],
-    projectLink: "#",
+    title: "SafeGrow",
+    description:"Medical website",
+    tags: ["ReactJS", "GSAP", "Development"],
+    projectLink: "https://safegrow-medical.vercel.app/",
   },
   {
-    imgSrc: "/images/project-5.jpg",
-    title: "eCommerce website",
-    tags: ["eCommerce", "Development"],
-    projectLink: "#",
+    imgSrc: "/images/project-1.jpg",
+    title: "WorkNest",
+    description:"Real-State website",
+    tags: ["HTML/CSS", "Design", "Development"],
+    projectLink: "https://work-nest-ten.vercel.app/",
   },
+ 
   {
-    imgSrc: "/images/project-6.jpg",
-    title: "vCard Personal portfolio",
-    tags: ["Web-design", "Development", "Next JS"],
-    projectLink: "#",
+    imgSrc: "/images/project-3.jpg",
+    title: "GoldenFork ",
+    description:"Restaurant website",
+    tags: ["Development", "Tailwind CSS"],
+    projectLink: "https://restaurant-website-nine-alpha.vercel.app/",
   },
+  
+  // {
+  //   imgSrc: "/images/project-5.jpg",
+  //   title: "eCommerce website",
+  //   tags: ["eCommerce", "Development"],
+  //   projectLink: "#",
+  // },
+  // {
+  //   imgSrc: "/images/project-6.jpg",
+  //   title: "vCard Personal portfolio",
+  //   tags: ["Web-design", "Development", "Next JS"],
+  //   projectLink: "#",
+  // },
 ];
 
 
@@ -49,14 +55,15 @@ export default function Work(){
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My portfolio highlights</h2>
 
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {works.map(({ imgSrc, title, tags, projectLink }, key) => (
+        <div className="grid gap-x-5 gap-y-8 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
+          {works.map(({ imgSrc, title, tags, projectLink,description }, key) => (
             <ProjectCard
               key={key}
               imgSrc={imgSrc}
               title={title}
               tags={tags}
               projectLink={projectLink}
+              description={description}
               classes="reveal-up"
             />
           ))}
