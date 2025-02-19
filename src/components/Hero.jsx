@@ -12,7 +12,7 @@ export default function Hero() {
           <div
             id="hero1"
             data-aos="fade-right"
-            data-aos-offset="300"
+            data-aos-offset="1000"
             data-aos-easing="ease-in-sine"
           >
             <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]">
@@ -69,7 +69,7 @@ export default function Hero() {
               <div
                 className=" w-full z-20"
                 data-aos="fade-left"
-                data-aos-offset="300"
+                data-aos-offset="1000"
                 data-aos-easing="ease-in-sine"
               >
                 <img
