@@ -1,102 +1,87 @@
-
 import { ButtonPrimary } from "./Button";
 
-import { TypeAnimation } from 'react-type-animation';
-import ShinyText from './ui/ShinyText.jsx';
+import { TypeAnimation } from "react-type-animation";
+import ShinyText from "./ui/ShinyText.jsx";
 import SocialLinks from "./ui/SocialLinks";
 
-
-export default function Hero(){
-  // const heroRef = useRef(null);
-  // useEffect(()=>{
-  //   const tl= gsap.timeline();
-  //   tl.from(heroRef.current,{
-  //    x:-100,
-
-  //     duration:.5,
-  
-  //   })
-  
-  // },[])
-
+export default function Hero() {
   return (
     <>
-    <section id="home" className="pt-28 lg:pt-36 ">
-    
-   
-      <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
-        <div id="hero1">
-        
-          <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]"> I am{" "} 
-          
-         
-         
-  
-  <ShinyText text="Md Rasel" disabled={false} speed={3} className='custom-class cinzel-decorative-regular' />
+      <section id="home" className="pt-28 lg:pt-36 ">
+        <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
+          <div
+            id="hero1"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]">
+              {" "}
+              I am{" "}
+              <ShinyText
+                text="Md Rasel"
+                disabled={false}
+                speed={3}
+                className="custom-class cinzel-decorative-regular"
+              />
+            </h3>
 
+            <h2>
+              <span className="text-[2rem] text-extra-bold xl:text-[3rem]">
+                a{" "}
+              </span>
+              <TypeAnimation
+                sequence={[
+                  " Full-stack Developer",
+                  1000,
+                  " Frontend Developer",
+                  1000,
+                  " Website Designer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ display: "inline-block" }}
+                repeat={Infinity}
+              />
+            </h2>
 
-           </h3>
+            <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin  ">
+              Building Scalable Modern Websites for the Future
+            </h2>
+            <div className="flex flex-col gap-7">
+              <SocialLinks />
 
+              <div className="flex items-center gap-3">
+                <ButtonPrimary label="Download CV" icon="download" />
 
-          
-
-
-
-
-
-            {/* <h2 className="text-3xl md:text-4xl ">Full-Stack Web Developer</h2> */}
-           <h2>
-            <span className="text-[2rem] text-extra-bold xl:text-[3rem]">a </span>
-            <TypeAnimation
-      sequence={[
-      
-        ' Full-stack Developer',
-        1000, 
-        ' Frontend Developer',
-        1000,
-        ' Website Designer',
-        1000,
-       
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{  display: 'inline-block' }}
-      repeat={Infinity}
-    />
-           </h2>
-            
-          <h2 className="text-2xl lg:text-3xl xl:text-4xl max-w-[15ch] sm:max-w-[20ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10 font-thin  ">
-            Building Scalable Modern Websites for the Future
-          </h2>
-          <div className="flex flex-col gap-7">
-          <SocialLinks/>
-         
-
-          <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />
-
-            {/* <ButtonOutline
+                {/* <ButtonOutline
               href="#about"
               label="Scroll down"
               icon="arrow_downward"
             /> */}
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
 
-        <div className="hidden lg:block" id="hero2">
-        <figure className="w-full max-w-[600px]  ml-auto  overflow-hidden">
-  <div className=" w-full z-20">
-    <img
-      src="/images/profile.jpg"
-      width={600}
-      height={500}
-      alt="Rasel"
-      className="w-full BannerImg "
-    />
-  </div>
+          <div className="hidden lg:block" id="hero2">
+            <figure className="w-full max-w-[600px]  ml-auto  overflow-hidden">
+              <div
+                className=" w-full z-20"
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
+                <img
+                  src="/images/profile.jpg"
+                  width={600}
+                  height={500}
+                  alt="Rasel"
+                  className="w-full BannerImg "
+                />
+              </div>
 
-  {/* <svg
+              {/* <svg
     viewBox="0 0 200 200"
     xmlns="http://www.w3.org/2000/svg"
      className="absolute w-[500px] h-[500px] top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-0"
@@ -107,13 +92,10 @@ export default function Hero(){
       transform="translate(100 100)"
     />
   </svg> */}
-</figure>
-        
+            </figure>
+          </div>
         </div>
-      </div>
-    </section>
-    
+      </section>
     </>
   );
-};
-
+}
