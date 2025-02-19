@@ -7,7 +7,7 @@ const Contact = () => {
         <div
           className="mb-12 lg:mb-0 lg:flex lg:flex-col"
           data-aos="fade-right"
-          data-aos-offset="300"
+          data-aos-offset="100"
           data-aos-easing="ease-in-sine"
         >
           <h2 className="headline-2 lg:max-w-[12ch] ">
@@ -27,7 +27,7 @@ const Contact = () => {
           method="POST"
           className="xl:pl-10 2xl:pl-20"
           data-aos="fade-left"
-          data-aos-offset="300"
+          data-aos-offset="100"
           data-aos-easing="ease-in-sine"
         >
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">

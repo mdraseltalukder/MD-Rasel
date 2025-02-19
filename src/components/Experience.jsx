@@ -39,7 +39,7 @@ const ExperienceSection = () => {
         <div
           className="space-y-8"
           data-aos="fade-up"
-          data-aos-offset="300"
+          data-aos-offset="100"
           data-aos-easing="ease-in-sine"
         >
           {experiences.map((exp, index) => (
@@ -48,7 +48,7 @@ const ExperienceSection = () => {
               key={index}
               className="bg-zinc-800 rounded-lg p-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl custom-spotlight-card"
               data-aos="fade-up"
-              data-aos-offset="300"
+              data-aos-offset="100"
               data-aos-easing="ease-in-sine"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">

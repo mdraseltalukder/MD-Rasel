@@ -48,7 +48,7 @@ const Footer = () => {
       <div
         className="container"
         data-aos="fade-up"
-        data-aos-offset="300"
+        data-aos-offset="100"
         data-aos-easing="ease-in-sine"
       >
         <div className="lg:grid lg:grid-cols-2">
