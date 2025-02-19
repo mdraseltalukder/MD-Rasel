@@ -12,8 +12,9 @@ export default function Hero() {
           <div
             id="hero1"
             data-aos="fade-right"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]">
               {" "}
@@ -69,8 +70,9 @@ export default function Hero() {
               <div
                 className=" w-full z-20"
                 data-aos="fade-left"
-                data-aos-offset="100"
+                data-aos-offset="50"
                 data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
               >
                 <img
                   src="/images/profile.jpg"

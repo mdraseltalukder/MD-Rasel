@@ -82,7 +82,7 @@ const Skill = () => {
         <div
           className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]"
           data-aos="fade-up"
-          data-aos-offset="100"
+          data-aos-offset="50"
           data-aos-easing="ease-in-sine"
         >
           {skillItem.map(({ imgSrc, label, desc }, key) => (

@@ -54,7 +54,7 @@ export default function Work() {
         <div
           className="grid gap-x-5 gap-y-8 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]"
           data-aos="fade-up"
-          data-aos-offset="100"
+          data-aos-offset="50"
           data-aos-easing="ease-in-sine"
         >
           {works.map(
