@@ -11,10 +11,10 @@ export default function Hero() {
         <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
           <div
             id="hero1"
-            data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
+            // data-aos="fade-right"
+            // data-aos-offset="50"
+            // data-aos-easing="ease-in-sine"
+            // data-aos-duration="1000"
           >
             <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]">
               {" "}
@@ -68,11 +68,12 @@ export default function Hero() {
           <div className="hidden lg:block" id="hero2">
             <figure className="w-full max-w-[600px]  ml-auto  overflow-hidden">
               <div
-                className=" w-full z-20"
-                data-aos="fade-left"
-                data-aos-offset="50"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="1000"
+                className=" w-full z-20 "
+                id="hero2"
+                // data-aos="fade-left"
+                // data-aos-offset="50"
+                // data-aos-easing="ease-in-sine"
+                // data-aos-duration="1000"
               >
                 <img
                   src="/images/profile.jpg"
