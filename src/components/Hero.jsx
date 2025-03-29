@@ -1,5 +1,4 @@
-import { ButtonPrimary } from "./Button";
-
+import { MdDownload } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 import ShinyText from "./ui/ShinyText.jsx";
 import SocialLinks from "./ui/SocialLinks";
@@ -54,7 +53,14 @@ export default function Hero() {
               <SocialLinks />
 
               <div className="flex items-center gap-3">
-                <ButtonPrimary label="Download CV" icon="download" />
+                <a
+                  href="https://drive.google.com/file/d/1m8dq3BJUVl1JLV2LhBoa7mFUGWpxqE25/view?usp=sharing"
+                  className="btn btn-primary"
+                  target="_blank"
+                >
+                  Download CV
+                  <MdDownload className="size-5" />
+                </a>
 
                 {/* <ButtonOutline
               href="#about"

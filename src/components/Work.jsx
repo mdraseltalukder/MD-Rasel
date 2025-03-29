@@ -2,6 +2,13 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project-5.jpg",
+    title: "NextStep",
+    description: "A Job Portal website",
+    tags: ["ReactJS", "GSAP", "Clerk Auth", "Supabase", "Development"],
+    projectLink: "https://next-step-job.vercel.app/",
+  },
+  {
     imgSrc: "/images/project-2.jpg",
     title: "PlumbRight",
     description: "Plumbing website",

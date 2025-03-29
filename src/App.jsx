@@ -29,17 +29,34 @@ const App = () => {
     if (showPage) {
       const tl = gsap.timeline();
 
-      tl.from("#gsap", {
-        opacity: 0,
-        duration: 1,
-      });
-      tl.to("#gsap", {
-        opacity: 1,
-        duration: 1.5,
-      });
+      tl.fromTo(
+        "#gsap",
+        {
+          opacity: 0,
+          duration: 1,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+        }
+      );
+      tl.fromTo(
+        "#socials",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.2,
+        },
+        "-=1"
+      );
+
       tl.to(".gsap-animation", {
         opacity: 0,
-        delay: 3,
+        delay: 4,
         duration: 1,
         onComplete: () => {
           setShowPage(false);
@@ -73,7 +90,7 @@ const App = () => {
       htl.fromTo(
         "#hero2",
         {
-          opacity: 0,
+          opacity: 1,
           scale: 1,
           x: 200,
         },
@@ -86,6 +103,12 @@ const App = () => {
         },
         "-=1"
       );
+      htl.from("#socials", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "power2.out",
+      });
       return () => {
         htl.kill();
       };
