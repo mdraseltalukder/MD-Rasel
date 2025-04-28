@@ -72,16 +72,15 @@ const App = () => {
   useEffect(() => {
     if (!showPage) {
       const htl = gsap.timeline();
+
       htl.fromTo(
         "#hero1",
         {
           opacity: 0,
-          scale: 0,
           x: -200,
         },
         {
           opacity: 1,
-          scale: 1,
           duration: 1,
           x: 0,
           ease: "power2.out",
@@ -91,12 +90,10 @@ const App = () => {
         "#hero2",
         {
           opacity: 1,
-          scale: 1,
           x: 200,
         },
         {
           opacity: 1,
-          scale: 1,
           x: 0,
           duration: 1,
           ease: "power2.out",

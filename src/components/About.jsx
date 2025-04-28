@@ -19,13 +19,12 @@ export default function About() {
     >
       <section
         id="about"
-        className="section "
         data-aos="fade-up"
         data-aos-offset="50"
         data-aos-easing="ease-in-sine"
       >
         <div className="container">
-          <div className="bg-transparent pb-6 rounded-2xl md:pb-12 md:grid md:grid-cols-[1fr_2fr] md:items-center md:gap-6">
+          <div className="bg-transparent py-6 rounded-2xl md:pb-12 md:grid md:grid-cols-[1fr_2fr] md:items-center md:gap-6">
             <div className="hidden md:block w-full">
               <img
                 src="images/profile.jpg"

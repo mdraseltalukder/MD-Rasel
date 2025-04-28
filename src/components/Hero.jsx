@@ -6,16 +6,17 @@ import SocialLinks from "./ui/SocialLinks";
 export default function Hero() {
   return (
     <>
-      <section id="home" className="pt-28 lg:pt-36 ">
+      <section id="home" className="py-28 lg:py-36 ">
         <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
           <div
+            className="opacity-0"
             id="hero1"
             // data-aos="fade-right"
             // data-aos-offset="50"
             // data-aos-easing="ease-in-sine"
             // data-aos-duration="1000"
           >
-            <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15]">
+            <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] ">
               {" "}
               I am{" "}
               <ShinyText
@@ -74,7 +75,7 @@ export default function Hero() {
           <div className="hidden lg:block" id="hero2">
             <figure className="w-full max-w-[600px]  ml-auto  overflow-hidden">
               <div
-                className=" w-full z-20 "
+                className=" w-full z-20 opacity-0 "
                 id="hero2"
                 // data-aos="fade-left"
                 // data-aos-offset="50"
