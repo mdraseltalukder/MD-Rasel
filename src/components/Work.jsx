@@ -2,6 +2,13 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project6.jpg",
+    title: "Coffee-Blend",
+    description: "A Coffee Booking and Delivery website",
+    tags: ["PHP", "MYSQL", "bootstrap", "Development"],
+    projectLink: "https://coffee-blend.wuaze.com",
+  },
+  {
     imgSrc: "/images/project-5.jpg",
     title: "NextStep",
     description: "A Job Portal website",
