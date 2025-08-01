@@ -58,18 +58,18 @@ headline-2 {
   -webkit-text-fill-color: transparent;
 }
 .headline-1 {
-  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+  @apply font-semibold lg:text-[55px] text-5xl leading-tight lg:leading-[1.15];
 }
 
 .headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
+  @apply font-semibold text-3xl lg:text-4xl lg:leading-tight;
 }
 
 .title-1 {
-  @apply text-[22px] font-normal;
+  @apply font-normal text-[22px];
 }
 span.index-module_type__E-SaG {
-  @apply font-extrabold text-[2rem] text-[#00e7f8] xl:text-[45px];
+  @apply font-extrabold text-[#00e7f8] text-[2rem] xl:text-[45px];
 }
 /* ---------------------------------- *\
  * UTILITIES
@@ -81,7 +81,7 @@ span.index-module_type__E-SaG {
 }
 
 .container {
-  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+  @apply mx-auto px-4 lg:px-8 xl:max-w-6xl;
 }
 
 .img-box {
@@ -117,7 +117,7 @@ span.index-module_type__E-SaG {
 }
 
 .navbar.active {
-  @apply opacity-100 scale-100 blur-0 visible;
+  @apply visible opacity-100 blur-0 scale-100;
 }
 
 .nav-link {
@@ -129,7 +129,7 @@ span.index-module_type__E-SaG {
 }
 
 .navbar .active-box {
-  @apply absolute bg-[#00e7f8] rounded-lg -z-10 transition-[top,left] duration-500;
+  @apply -z-10 absolute bg-[#00e7f8] rounded-lg transition-[top,left] duration-500;
 }
 
 /* Button */
@@ -163,7 +163,7 @@ span.index-module_type__E-SaG {
 }
 
 .btn-outline {
-  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
+  @apply bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800 h-11;
 }
 
 /* button */
@@ -312,11 +312,11 @@ span.index-module_type__E-SaG {
 /* Text field */
 
 .label {
-  @apply block text-zinc-200 text-sm font-normal mb-2;
+  @apply block mb-2 font-normal text-zinc-200 text-sm;
 }
 
 .text-field {
-  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-[#00eeff46] focus:ring-[rgb(0,231,248)] focus:ring-2;
+  @apply block bg-zinc-800 px-3 py-3 rounded-xl outline-none ring-1 ring-transparent hover:ring-[#00eeff46] focus:ring-[rgb(0,231,248)] focus:ring-2 ring-inset w-full text-sm transition-shadow;
 }
 
 .text-field::placeholder {
@@ -398,7 +398,7 @@ body {
   }
 }
 .gsap-animation {
-  @apply w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-3 fixed  top-0 left-0 z-50;
+  @apply top-0 left-0 z-50 fixed flex flex-col justify-center items-center gap-3 w-[100vw] h-[100vh];
   background: linear-gradient(45deg, #08001f, #220055);
   animation: brightnessPulse 2s infinite alternate ease-in-out;
 }

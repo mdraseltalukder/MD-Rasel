@@ -2,11 +2,11 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project6.jpg",
-    title: "Coffee-Blend",
-    description: "A Coffee Booking and Delivery website",
+    imgSrc: "/images/project-7.jpg",
+    title: "Asbab Furniture",
+    description: "an E-commerce Website",
     tags: ["PHP", "MYSQL", "bootstrap", "Development"],
-    projectLink: "https://coffee-blend.wuaze.com",
+    projectLink: "https://asbab-furniture.wuaze.com/",
   },
   {
     imgSrc: "/images/project-5.jpg",
@@ -14,6 +14,13 @@ const works = [
     description: "A Job Portal website",
     tags: ["ReactJS", "GSAP", "Clerk Auth", "Supabase", "Development"],
     projectLink: "https://next-step-job.vercel.app/",
+  },
+  {
+    imgSrc: "/images/project6.jpg",
+    title: "Coffee-Blend",
+    description: "A Coffee Booking and Delivery website",
+    tags: ["PHP", "MYSQL", "bootstrap", "Development"],
+    projectLink: "https://coffee-blend.wuaze.com",
   },
   {
     imgSrc: "/images/project-2.jpg",
@@ -29,13 +36,13 @@ const works = [
     tags: ["ReactJS", "GSAP", "Development"],
     projectLink: "https://safegrow-medical.vercel.app/",
   },
-  {
-    imgSrc: "/images/project-1.jpg",
-    title: "WorkNest",
-    description: "Real-State website",
-    tags: ["HTML/CSS", "Design", "Development"],
-    projectLink: "https://work-nest-ten.vercel.app/",
-  },
+  // {
+  //   imgSrc: "/images/project-1.jpg",
+  //   title: "WorkNest",
+  //   description: "Real-State website",
+  //   tags: ["HTML/CSS", "Design", "Development"],
+  //   projectLink: "https://work-nest-ten.vercel.app/",
+  // },
 
   {
     imgSrc: "/images/project-3.jpg",
