@@ -18,6 +18,7 @@ import Skill from "./components/Skill";
 import Work from "./components/Work";
 // import Review from "./components/Review";
 import { useEffect } from "react";
+import ChatWidget from "./components/ChatMassage";
 import Contact from "./components/Contact";
 import ExperienceSection from "./components/Experience";
 import Footer from "./components/Footer";
@@ -117,6 +118,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <ChatWidget />
         <About />
         <Skill />
         <Work />

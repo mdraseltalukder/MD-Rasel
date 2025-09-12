@@ -406,3 +406,50 @@ body {
 .project:hover .project-text {
   @apply translate-y-0 duration-500;
 }
+
+/* chat ai agent  */
+.chat-window-wrapper .chat-window-toggle {
+  @apply right-8 bottom-8 z-50 fixed place-items-center grid bg-[rgba(0,229,255,0.7)] shadow-[rgba(0,229,255,0.3)] shadow-lg rounded-full w-14 h-14 text-zinc-950 transition-[transform,background-color];
+}
+.chat-window-wrapper .chat-window-toggle:hover,
+.chat-window-wrapper .chat-window-toggle:focus {
+  transform: scale(1.05);
+  background: rgba(0, 229, 255, 0.589);
+}
+.chat-layout .chat-header {
+  @apply bg-[rgba(0,229,255)];
+}
+.chat-message.chat-message-from-user:not(.chat-message-transparent) {
+  @apply bg-[#00e7f8];
+}
+.chat-input-send-button[disabled][data-v-de5e7961],
+.chat-input-file-button[disabled][data-v-de5e7961] {
+  cursor: no-drop;
+  @apply text-[#00e7f8];
+}
+.chat-input-send-button[data-v-de5e7961],
+.chat-input-file-button[data-v-de5e7961] {
+  height: var(--chat--textarea--height);
+  width: var(--chat--textarea--height);
+  background: var(--chat--input--send--button--background, white);
+  cursor: pointer;
+  color: #00e7f8;
+  border: 0;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--chat--transition-duration) ease;
+}
+.chat-window-wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 80px;
+  right: 50px;
+  z-index: var(--chat--window--z-index);
+  max-width: calc(100% - var(--chat--window--right, var(--chat--spacing)) * 2);
+  max-height: calc(
+    100% - var(--chat--window--bottom, var(--chat--spacing)) * 2
+  );
+}
