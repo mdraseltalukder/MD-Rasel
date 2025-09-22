@@ -71,6 +71,26 @@ const skillItem = [
     label: "MySQL Database",
     desc: "database management system",
   },
+  {
+    imgSrc: "/images/gsap.png",
+    label: "GSAP",
+    desc: "JavaScript animation library",
+  },
+  {
+    imgSrc: "/images/framer_motion.png",
+    label: "Framer Motion",
+    desc: "React animation library",
+  },
+  {
+    imgSrc: "/images/shadcn.png",
+    label: "shadcn/ui",
+    desc: "Component library for React & Next.js",
+  },
+  {
+    imgSrc: "/images/n8n.png",
+    label: "n8n Automation",
+    desc: "Workflow automation tool for connecting apps and APIs",
+  },
 ];
 
 const Skill = () => {

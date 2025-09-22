@@ -4,21 +4,35 @@ const experiences = [
   {
     role: "Full Stack Developer",
     company: "Web Battalion",
-    period: "2023 - 2024",
+    period: "2024 - 2025",
     description: [
-      "Developed and maintained multiple client-facing web applications",
-      "Implemented responsive designs and ensured cross-browser compatibility",
-      "Collaborated with UX team to improve user experience",
+      "Built and maintained full-stack web applications using React and Next.js",
+      "Developed server-side APIs and backend logic with Next.js API routes",
+      "Implemented responsive UI/UX and ensured cross-browser compatibility",
+      "Collaborated with team members to optimize performance and scalability",
+      "Integrated third-party services and databases for dynamic application functionality",
     ],
   },
+
   {
     role: "Frontend Developer",
     company: "Codemanbd",
-    period: "2022 - 2023",
+    period: "2023 - 2024",
     description: [
       "Built interactive user interfaces using React and TypeScript",
       "Integrated REST APIs and implemented state management",
       "Participated in agile development processes",
+    ],
+  },
+  {
+    role: "PHP & MYsql Developer",
+    company: "Web Battalion",
+    description: [
+      "Developed dynamic web applications using PHP and MySQL",
+      "Designed and optimized relational databases for efficient data storage",
+      "Implemented server-side logic, form handling, and CRUD operations",
+      "Integrated email services, payment gateways, and user authentication systems",
+      "Ensured responsive front-end integration with back-end functionality",
     ],
   },
 ];
