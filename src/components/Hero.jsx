@@ -74,7 +74,7 @@ export default function Hero() {
 
           <div className="hidden lg:block" id="hero2">
             <figure className="w-full max-w-[600px]  ml-auto  overflow-hidden">
-              <div className=" w-full z-20 opacity-0 " id="hero2">
+              <div className=" w-full z-20">
                 <img
                   src="/images/profile.jpg"
                   width={600}
@@ -82,6 +82,7 @@ export default function Hero() {
                   alt="Rasel"
                   className="w-full BannerImg "
                 />
+                <div></div>
               </div>
             </figure>
           </div>

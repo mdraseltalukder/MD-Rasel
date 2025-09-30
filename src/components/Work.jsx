@@ -2,6 +2,21 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/project-8.jpg",
+    title: "Fizzi 3D Landing Page",
+    description: "a scroll-animated 3D e-commerce product landing page",
+    tags: [
+      "Next.js",
+      "Prismic ",
+      "Tree.js",
+      "React-tree-fiber",
+      "GSAP",
+      "TypeScript ",
+      "Frontend Development",
+    ],
+    projectLink: "https://fizzi-sand.vercel.app/",
+  },
+  {
     imgSrc: "/images/project-7.jpg",
     title: "Asbab Furniture",
     description: "an E-commerce Website",
@@ -22,13 +37,13 @@ const works = [
     tags: ["PHP", "MYSQL", "bootstrap", "Development"],
     projectLink: "https://coffee-blend.wuaze.com",
   },
-  {
-    imgSrc: "/images/project-2.jpg",
-    title: "PlumbRight",
-    description: "Plumbing website",
-    tags: ["ReactJS", "GSAP", "Development"],
-    projectLink: "https://plumb-right.vercel.app/",
-  },
+  // {
+  //   imgSrc: "/images/project-2.jpg",
+  //   title: "PlumbRight",
+  //   description: "Plumbing website",
+  //   tags: ["ReactJS", "GSAP", "Development"],
+  //   projectLink: "https://plumb-right.vercel.app/",
+  // },
   {
     imgSrc: "/images/project-4.jpg",
     title: "SafeGrow",

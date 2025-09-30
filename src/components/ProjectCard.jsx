@@ -11,7 +11,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, description }) => {
       <div className="  project absolute  bottom-0 left-0 bg-[#2c8288e7] inset-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 rounded-lg">
         <div className="project-text flex flex-col items-center  gap-4 absolute z-40 inset-x-0 bottom-0 p-4 translate-y-full transition-transform  ease-in-out  overflow-hidden ">
           <h3 className="title-1  text-white">{title}</h3>
-          <p className="text-white">{description}</p>
+          <p className="text-white text-center">{description}</p>
 
           <div className="flex flex-wrap items-center justify-center gap-2">
             {tags.map((label, key) => (
