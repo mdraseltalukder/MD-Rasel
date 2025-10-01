@@ -1,4 +1,6 @@
-import ProjectCard from "./ProjectCard";
+import { Suspense } from "react";
+import ProjectCard from "@/components/ProjectCard";
+import { TextSplitter } from "@/components/ui/TextSplitter";
 
 const works = [
   {
@@ -85,25 +87,23 @@ export default function Work() {
   return (
     <section id="work" className="section">
       <div className="container">
-        <h2 className="headline-2 mb-8 ">My portfolio highlights</h2>
+        <h2 className="headline-2 mb-8 section-heading">
+          <TextSplitter text="My portfolio highlights" />
+        </h2>
 
-        <div
-          className="grid gap-x-5 gap-y-8 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]"
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-easing="ease-in-sine"
-        >
+        <div className="grid gap-x-5 gap-y-8 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
           {works.map(
             ({ imgSrc, title, tags, projectLink, description }, key) => (
-              <ProjectCard
-                key={key}
-                imgSrc={imgSrc}
-                title={title}
-                tags={tags}
-                projectLink={projectLink}
-                description={description}
-                classes=""
-              />
+              <Suspense key={key}>
+                <ProjectCard
+                  imgSrc={imgSrc}
+                  title={title}
+                  tags={tags}
+                  projectLink={projectLink}
+                  description={description}
+                  classes=""
+                />
+              </Suspense>
             )
           )}
         </div>

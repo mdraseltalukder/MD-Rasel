@@ -1,7 +1,7 @@
+import ShinyText from "@/components/ui/ShinyText.jsx";
+import SocialLinks from "@/components/ui/SocialLinks";
 import { MdDownload } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
-import ShinyText from "./ui/ShinyText.jsx";
-import SocialLinks from "./ui/SocialLinks";
 
 export default function Hero() {
   return (

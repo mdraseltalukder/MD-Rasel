@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin 'tailwind-scrollbar';
+
+@theme {
+  --font-sans: Inter, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* ---------------------------------- *\
  * BASE
@@ -15,6 +37,7 @@ body {
    text-zinc-50
  /* bg-[#2a1454] */
  /* bg-[#8750f7] */;
+  font-family: "Inter", sans-serif;
 }
 /* body{
   background: rgb(135,80,247);
@@ -48,15 +71,25 @@ headline-2 {
 .headline-1,
 .headline-2 {
   @apply max-w-max;
-  background: -webkit-linear-gradient(0deg, #00eeff, #346c70);
+  opacity: 1;
+}
+
+.split-word .split-char {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background: -webkit-linear-gradient(60deg, #00eeff, #233f41);
+
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
-.experience {
-  background: -webkit-linear-gradient(0deg, #00eeff, #233f41);
+
+/* .experience {
+  background: -webkit-linear-gradient(60deg, #00eeff, #233f41);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 .headline-1 {
   @apply font-semibold lg:text-[55px] text-5xl leading-tight lg:leading-[1.15];
 }
@@ -107,17 +140,17 @@ span.index-module_type__E-SaG {
 /* Menu btn */
 
 .menu-btn {
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/2 backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95 md:hidden;
 }
 
 /* Navbar */
 
 .navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-xs opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-none md:visible md:scale-100 backdrop-blur-2xl;
 }
 
 .navbar.active {
-  @apply visible opacity-100 blur-0 scale-100;
+  @apply visible opacity-100 blur-none scale-100;
 }
 
 .nav-link {
@@ -155,7 +188,8 @@ span.index-module_type__E-SaG {
   /* hover:bg-[#05acb8] active:bg-[#05acb8]; */;
 }
 .btn-primary:hover {
-  box-shadow: rgba(0, 231, 248, 0.35) 0px 5px 50px;
+  /* box-shadow: rgba(0, 231, 248, 0.35) 0px 5px 50px; */
+  @apply bg-[rgba(0,232,248,0.82)];
 }
 .btn-primary:active {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
@@ -316,7 +350,7 @@ span.index-module_type__E-SaG {
 }
 
 .text-field {
-  @apply block bg-zinc-800 px-3 py-3 rounded-xl outline-none ring-1 ring-transparent hover:ring-[#00eeff46] focus:ring-[rgb(0,231,248)] focus:ring-2 ring-inset w-full text-sm transition-shadow;
+  @apply block bg-zinc-800 px-3 py-3 rounded-xl outline-hidden ring-1 ring-transparent hover:ring-[#00eeff46] focus:ring-[rgb(0,231,248)] focus:ring-2 ring-inset w-full text-sm transition-shadow;
 }
 
 .text-field::placeholder {
@@ -398,7 +432,7 @@ body {
   }
 }
 .gsap-animation {
-  @apply top-0 left-0 z-50 fixed flex flex-col justify-center items-center gap-3 w-[100vw] h-[100vh];
+  @apply top-0 left-0 z-50 fixed flex flex-col justify-center items-center gap-3 w-screen h-screen;
   background: linear-gradient(45deg, #08001f, #220055);
   animation: brightnessPulse 2s infinite alternate ease-in-out;
 }

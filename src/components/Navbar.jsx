@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
@@ -54,12 +53,12 @@ const Navbar = ({ navOpen }) => {
       link: "#experience",
       className: "nav-link",
     },
-   
-    {
-      label: "Contact",
-      link: "#contact",
-      className: "nav-link md:hidden",
-    },
+
+    // {
+    //   label: "Contact",
+    //   link: "#contact",
+    //   className: "nav-link md:hidden",
+    // },
   ];
 
   return (
