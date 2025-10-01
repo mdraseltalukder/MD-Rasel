@@ -1,5 +1,5 @@
 // /* eslint-disable react/prop-types */
-// import SocialLinks from "./ui/SocialLinks";
+// import SocialLinks from "@/components/ui/SocialLinks";
 
 // export default function GsapAnimation({ showPage, setShowPage }) {
 //   return (

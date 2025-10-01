@@ -4,25 +4,25 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
 
 /**
+ * Components
+ */
+import About from "@/components/About";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Skill from "@/components/Skill";
+import Work from "@/components/Work";
+// import Review from "@/components/Review";
+import ChatWidget from "@/components/ChatMassage";
+import Contact from "@/components/Contact";
+import ExperienceSection from "@/components/Experience";
+import Footer from "@/components/Footer";
+import Tools from "./components/Tools";
+// import GsapAnimation from "./components/GsapAnimation";
+
+/**
  * Register gsap plugins
  */
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-/**
- * Components
- */
-import About from "./components/About";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Skill from "./components/Skill";
-import Work from "./components/Work";
-// import Review from "./components/Review";
-import { useEffect } from "react";
-import ChatWidget from "./components/ChatMassage";
-import Contact from "./components/Contact";
-import ExperienceSection from "./components/Experience";
-import Footer from "./components/Footer";
-// import GsapAnimation from "./components/GsapAnimation";
 const App = () => {
   // const [showPage, setShowPage] = useState(true);
 
@@ -70,7 +70,7 @@ const App = () => {
   //   }
   // }, [showPage]);
 
-  useEffect(() => {
+  useGSAP(() => {
     // if (!showPage) {
     const htl = gsap.timeline();
 
@@ -107,11 +107,50 @@ const App = () => {
       stagger: 0.2,
       ease: "power2.out",
     });
+
+    // }
+
+    // all section animation
+
+    document.querySelectorAll(".section-heading").forEach((heading) => {
+      gsap.from(heading.querySelectorAll(".split-char"), {
+        scrollTrigger: {
+          trigger: heading,
+          start: "top bottom",
+          end: "bottom 80%",
+          scrub: 1.5,
+        },
+        scale: 1.3,
+        y: 40,
+        rotate: -25,
+        opacity: 0,
+        stagger: 0.1,
+        ease: "back.out(3)",
+        duration: 0.5,
+      });
+
+      const subheading = heading.parentElement.querySelector(".subheading");
+
+      if (subheading) {
+        gsap.from(subheading, {
+          scrollTrigger: {
+            trigger: subheading,
+            start: "top bottom",
+            end: "bottom 80%",
+            scrub: 1.5,
+          },
+          y: 40,
+          opacity: 0,
+        });
+      }
+    });
+
+    // Cleanup properly
     return () => {
       htl.kill();
+      // scrollTl.kill();
     };
-    // }
-  }, []);
+  });
 
   return (
     <ReactLenis root>
@@ -121,6 +160,7 @@ const App = () => {
         <ChatWidget />
         <About />
         <Skill />
+        <Tools />
         <Work />
         <ExperienceSection />
         {/* <Review /> */}

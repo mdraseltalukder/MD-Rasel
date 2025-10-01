@@ -1,4 +1,5 @@
-import { ButtonPrimary } from "./Button";
+import { ButtonPrimary } from "@/components/Button";
+import { TextSplitter } from "@/components/ui/TextSplitter";
 
 const sitemap = [
   {
@@ -47,14 +48,14 @@ const Footer = () => {
     <footer className="section">
       <div
         className="container"
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-easing="ease-in-sine"
+        // data-aos="fade-up"
+        // data-aos-offset="50"
+        // data-aos-easing="ease-in-sine"
       >
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch] ">
-              Let&apos;s work together today!
+            <h2 className="headline-1 mb-8 lg:max-w-[12ch]  section-heading">
+              <TextSplitter text="Let's work together today!" />
             </h2>
 
             <ButtonPrimary

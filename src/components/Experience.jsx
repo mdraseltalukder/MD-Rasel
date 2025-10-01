@@ -1,5 +1,6 @@
 import { Briefcase, Building2, Calendar } from "lucide-react";
-import SpotlightCard from "./ui/SpotlightCard";
+import SpotlightCard from "@/components/ui/SpotlightCard";
+import { TextSplitter } from "@/components/ui/TextSplitter";
 const experiences = [
   {
     role: "Full Stack Developer",
@@ -42,28 +43,28 @@ const ExperienceSection = () => {
     <section className="py-20" id="experience">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4 experience">
-            Professional Experience
+          <h2 className="text-4xl font-bold  mb-4 section-heading heading-2">
+            <TextSplitter text="Professional Experience" />
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg subheading">
             My journey in the tech industry
           </p>
         </div>
 
         <div
           className="space-y-8"
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-easing="ease-in-sine"
+          // data-aos="fade-up"
+          // data-aos-offset="50"
+          // data-aos-easing="ease-in-sine"
         >
           {experiences.map((exp, index) => (
             <SpotlightCard
               spotlightColor="rgba(0, 229, 255, 0.2)"
               key={index}
               className="bg-zinc-800 rounded-lg p-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl custom-spotlight-card"
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-easing="ease-in-sine"
+              // data-aos="fade-up"
+              // data-aos-offset="50"
+              // data-aos-easing="ease-in-sine"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
