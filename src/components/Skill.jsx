@@ -69,6 +69,11 @@ const skillItem = [
     desc: "database management system",
   },
   {
+    imgSrc: "/images/mongodb.svg",
+    label: "MongoDB Database",
+    desc: "database management system",
+  },
+  {
     imgSrc: "/images/gsap.png",
     label: "GSAP",
     desc: "JavaScript animation library",
