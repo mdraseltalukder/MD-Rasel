@@ -79,7 +79,7 @@ export default function Hero() {
                   src="/images/profile.jpg"
                   width={600}
                   height={500}
-                  alt="Rasel"
+                  alt="Portfolio project by Md Rasel"
                   className="w-full BannerImg "
                 />
                 <div></div>

@@ -28,7 +28,7 @@ export default function About() {
             <div className="hidden md:block w-full">
               <img
                 src="images/AboutImg2.png"
-                alt=""
+                alt="md rasel talukder"
                 className="w-full max-h-[500px] object-cover  rounded-lg shadow-lg object-top  shadow-[#00e7f8]"
               />
             </div>
