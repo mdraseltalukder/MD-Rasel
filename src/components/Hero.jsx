@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   return (
     <>
-      <section id="home" className="py-28 lg:py-36 ">
+      <section id="home" className="py-28 lg:py-36 relative ">
         <div className="container  items-center lg:grid lg:grid-cols-2 lg:gap-10 ">
           <div
             className="opacity-0"

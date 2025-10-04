@@ -33,12 +33,69 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 
+  @apply bg-[#0d0d0d] 
+  /* bg-zinc-900  */
    text-zinc-50
  /* bg-[#2a1454] */
  /* bg-[#8750f7] */;
   font-family: "Inter", sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(
+      circle at 20% 50%,
+      hsl(189 100% 50% / 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      hsl(189 100% 50% / 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 20%,
+      hsl(189 100% 50% / 0.02) 0%,
+      transparent 50%
+    );
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(hsl(0 0% 15% / 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(0 0% 15% / 0.5) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(
+    ellipse 80% 50% at 50% 50%,
+    black 40%,
+    transparent 100%
+  );
+}
+
+@keyframes grid-flow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
 /* body{
   background: rgb(135,80,247);
 background: radial-gradient(circle, rgba(135,80,247,1) 0%, rgba(42,20,84,1) 100%);
