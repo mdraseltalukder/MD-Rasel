@@ -4,6 +4,31 @@
   class="scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-500"
 >
   <head>
+    <!-- for seo -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      .hero {
+        text-align: center;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="/assets/index-Di6PDPMq.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/index-Di6PDPMq.css" />
+    </noscript>
+    <!-- charset -->
     <meta charset="UTF-8" />
     <!-- Primary Meta Tags -->
     <title>Md Rasel | Full Stack Web Developer</title>
@@ -45,27 +70,51 @@
     <!-- 
      - Google font link
     -->
+    <!-- Preconnect only once -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inter (critical font) preload + swap -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Cinzel Decorative + Space Grotesk (non-critical) deferred load -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <!-- 
-     - Material symbols rounded
-    -->
+    <!-- Material Symbols Rounded (icons) preload + swap -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- advance seo  -->
     <script type="application/ld+json">
