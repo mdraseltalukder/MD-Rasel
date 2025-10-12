@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="flex items-center justify-between pt-10 mb-8">
           <a href="#home" className="logo ">
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               width={200}
               height={120}
               alt="md rasel logo"

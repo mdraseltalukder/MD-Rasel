@@ -11,7 +11,7 @@ const Header = () => {
         <h1>
           <a href="/" className="logo">
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               width={200}
               height={100}
               alt="Md Rasel"
