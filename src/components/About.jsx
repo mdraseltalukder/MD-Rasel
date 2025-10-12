@@ -27,8 +27,8 @@ export default function About() {
           <div className="bg-transparent py-6 rounded-2xl md:pb-12 md:grid md:grid-cols-[1fr_2fr] md:items-center md:gap-6">
             <div className="hidden md:block w-full">
               <img
-                src="images/AboutImg2.png"
-                alt="md rasel talukder"
+                src="images/AboutImg.webp"
+                alt="Md Rasel"
                 className="w-full max-h-[500px] object-cover  rounded-lg shadow-lg object-top  shadow-[#00e7f8]"
               />
             </div>

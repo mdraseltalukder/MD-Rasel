@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 const works = [
   {
-    imgSrc: "/images/project-8.jpg",
+    imgSrc: "/images/project-8.webp",
     title: "Fizzi 3D Landing Page",
     description: "a scroll-animated 3D e-commerce product landing page",
     tags: [
@@ -19,7 +19,7 @@ const works = [
     projectLink: "https://fizzi-sand.vercel.app/",
   },
   {
-    imgSrc: "/images/project-7.jpg",
+    imgSrc: "/images/project-7.webp",
     title: "Asbab Furniture",
     description: "an E-commerce Website",
     tags: ["PHP", "MYSQL", "bootstrap", "Development"],

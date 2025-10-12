@@ -74,43 +74,43 @@ const skillItem = [
     desc: "database management system",
   },
   {
-    imgSrc: "/images/gsap.png",
+    imgSrc: "/images/gsap.webp",
     label: "GSAP",
     desc: "JavaScript animation library",
   },
   {
-    imgSrc: "/images/framer_motion.png",
+    imgSrc: "/images/framer_motion.webp",
     label: "Framer Motion",
     desc: "React animation library",
   },
   {
-    imgSrc: "/images/github.png",
+    imgSrc: "/images/github.webp",
     label: "GitHub",
     desc: "Code Hosting Platform",
   },
   {
-    imgSrc: "/images/vercel.png",
+    imgSrc: "/images/vercel.webp",
     label: "Vercel",
     desc: "Frontend Hosting Service",
   },
   {
-    imgSrc: "/images/prisma.png",
+    imgSrc: "/images/prisma.webp",
     label: "Prisma",
     desc: "Database ORM Tool",
   },
   {
-    imgSrc: "/images/grafql.png",
+    imgSrc: "/images/grafql.webp",
     label: "GraphQL",
     desc: "API Query Language",
   },
   {
-    imgSrc: "/images/docker.png",
+    imgSrc: "/images/docker.webp",
     label: "Docker",
     desc: "Containerization Platform",
   },
 
   {
-    imgSrc: "/images/shadcn.png",
+    imgSrc: "/images/shadcn.webp",
     label: "shadcn/ui",
     desc: "Component library ",
   },
@@ -125,7 +125,7 @@ const skillItem = [
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/n8n.png",
+    imgSrc: "/images/n8n.webp",
     label: "n8n Automation",
     desc: "Workflow Automation Tool",
   },
