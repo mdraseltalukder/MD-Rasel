@@ -1,6 +1,6 @@
-import { Suspense } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { TextSplitter } from "@/components/ui/TextSplitter";
+import { Suspense } from "react";
 
 const works = [
   {
@@ -68,19 +68,6 @@ const works = [
     tags: ["Development", "Tailwind CSS"],
     projectLink: "https://restaurant-website-nine-alpha.vercel.app/",
   },
-
-  // {
-  //   imgSrc: "/images/project-5.jpg",
-  //   title: "eCommerce website",
-  //   tags: ["eCommerce", "Development"],
-  //   projectLink: "#",
-  // },
-  // {
-  //   imgSrc: "/images/project-6.jpg",
-  //   title: "vCard Personal portfolio",
-  //   tags: ["Web-design", "Development", "Next JS"],
-  //   projectLink: "#",
-  // },
 ];
 
 export default function Work() {

@@ -16,7 +16,7 @@ export default function Hero() {
             // data-aos-easing="ease-in-sine"
             // data-aos-duration="1000"
           >
-            <h3 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] ">
+            <h1 className=" my-5 text-5xl leading-tight font-light lg:text-[55px] lg:leading-[1.15] ">
               {" "}
               I am{" "}
               <ShinyText
@@ -25,7 +25,7 @@ export default function Hero() {
                 speed={3}
                 className="custom-class cinzel-decorative-regular"
               />
-            </h3>
+            </h1>
 
             <h2>
               <span className="text-[2rem] text-extra-bold xl:text-[3rem]">

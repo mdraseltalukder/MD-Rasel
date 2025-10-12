@@ -87,6 +87,7 @@ const App = () => {
         ease: "power2.out",
       }
     );
+
     htl.fromTo(
       "#hero2",
       {
@@ -101,6 +102,7 @@ const App = () => {
       },
       "-=1"
     );
+
     htl.from("#socials", {
       opacity: 0,
       y: 50,

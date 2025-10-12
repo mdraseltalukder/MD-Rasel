@@ -325,6 +325,7 @@ export const LogoLoop = memo(
             role="list"
             aria-hidden={copyIndex > 0}
             ref={copyIndex === 0 ? seqRef : undefined}
+            tabIndex="-1"
           >
             {logos.map((item, itemIndex) =>
               renderLogoItem(item, `${copyIndex}-${itemIndex}`)

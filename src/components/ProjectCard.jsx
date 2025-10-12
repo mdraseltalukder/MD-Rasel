@@ -32,6 +32,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, description }) => {
 
           <a
             href={projectLink}
+            aria-label={title}
             target="_blank"
             className="hover:scale-95 bg-[#00e7f8] 
         text-black px-3 py-1 rounded-lg inset-0 "

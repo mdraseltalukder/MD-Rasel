@@ -76,10 +76,11 @@ const SocialLink = [
 export default function SocialLinks() {
   return (
     <div className="flex items-center gap-3 ">
-      {SocialLink.map(({ href, icon }, key) => (
+      {SocialLink.map(({ href, icon, alt }, key) => (
         <a
           key={key}
           href={href}
+          aria-label={alt}
           target="_blank"
           className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-[#00e7f8] text-[#00e7f8] rounded-lg transition-[background-color,color]  hover:bg-[#00e7f8] hover:text-zinc-950 active:bg-[#00e7f8] overflow-hidden"
           id="socials"
