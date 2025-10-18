@@ -46,13 +46,13 @@ const works = [
   //   tags: ["ReactJS", "GSAP", "Development"],
   //   projectLink: "https://plumb-right.vercel.app/",
   // },
-  {
-    imgSrc: "/images/project-4.jpg",
-    title: "SafeGrow",
-    description: "Medical website",
-    tags: ["ReactJS", "GSAP", "Development"],
-    projectLink: "https://safegrow-medical.vercel.app/",
-  },
+  // {
+  //   imgSrc: "/images/project-4.jpg",
+  //   title: "SafeGrow",
+  //   description: "Medical website",
+  //   tags: ["ReactJS", "GSAP", "Development"],
+  //   projectLink: "https://safegrow-medical.vercel.app/",
+  // },
   // {
   //   imgSrc: "/images/project-1.jpg",
   //   title: "WorkNest",
@@ -61,12 +61,26 @@ const works = [
   //   projectLink: "https://work-nest-ten.vercel.app/",
   // },
 
+  // {
+  //   imgSrc: "/images/project-3.jpg",
+  //   title: "GoldenFork ",
+  //   description: "Restaurant website",
+  //   tags: ["Development", "Tailwind CSS"],
+  //   projectLink: "https://restaurant-website-nine-alpha.vercel.app/",
+  // },
   {
-    imgSrc: "/images/project-3.jpg",
-    title: "GoldenFork ",
-    description: "Restaurant website",
-    tags: ["Development", "Tailwind CSS"],
-    projectLink: "https://restaurant-website-nine-alpha.vercel.app/",
+    imgSrc: "/images/project-9.webp",
+    title: "Serenity Spa",
+    description: "Spa website",
+    tags: ["Development", "Tailwind CSS", "Next.js"],
+    projectLink: "https://serenity-spa-ashen.vercel.app/",
+  },
+  {
+    imgSrc: "/images/project-10.webp",
+    title: "Luxe Beauty",
+    description: "Salon website",
+    tags: ["Development", "Tailwind CSS", "Next.js"],
+    projectLink: "https://luxe-beauty-rho.vercel.app/",
   },
 ];
 
